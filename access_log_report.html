@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123-bibel.de - Zugriff-Analyse</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        .header h1 { color: #333; margin-bottom: 5px; }
+        .header p { color: #666; font-size: 14px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .stat-number { font-size: 32px; font-weight: bold; margin-bottom: 5px; }
+        .stat-label { font-size: 12px; opacity: 0.9; }
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        .section h2 { color: #333; margin-bottom: 15px; font-size: 20px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f5f5f5; }
+        tr.vpn { background: #fff3cd; }
+        tr.mobile { background: #cfe2ff; }
+        tr.bot { background: #f0f0f0; }
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        .badge-vpn { background: #fff3cd; color: #ff9800; }
+        .badge-mobile { background: #cfe2ff; color: #2196f3; }
+        .badge-bot { background: #f0f0f0; color: #999; }
+        .country-list { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .country-item {
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        .country-item strong { color: #667eea; }
+        footer {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍123-bibel.de - Zugriff-Analyse</h1>
+            <p>Analysedaten vom 3.7.2026 bis 4.7.2026 (UTC)</p>
+            
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">21</div>
+                    <div class="stat-label">Gesamt Requests</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">14</div>
+                    <div class="stat-label">Einzigartige IPs</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">VPN-Verbindungen</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Mobile-Netze</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Bots/Crawler</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Geografische Verteilung (ohne Bots)</h2>
+            <div class="country-list">
+                <div class="country-item"><strong>USA</strong>: 9 Zugriffe</div>
+                <div class="country-item"><strong>Deutschland</strong>: 3 Zugriffe</div>
+                <div class="country-item"><strong>Schweden</strong>: 2 Zugriffe</div>
+
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Detaillierte Zugriff-Liste</h2>
+            <table>
+                <tr>
+                    <th>Datum/Uhrzeit</th>
+                    <th>IP-Adresse</th>
+                    <th>Land</th>
+                    <th>Provider</th>
+                    <th>Status</th>
+                    <th>Methode</th>
+                    <th>Pfad</th>
+                    <th>Flags</th>
+                </tr>
+                <tr>
+                    <td>2026-07-03 07:32:55</td>
+                    <td><code>144.172.89.63</code></td>
+                    <td>USA</td>
+                    <td>DigitalOcean</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/.git/config</code></td>
+                    <td></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 09:55:04</td>
+                    <td><code>66.249.69.161</code></td>
+                    <td>USA</td>
+                    <td>Google</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/robots.txt</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 09:55:04</td>
+                    <td><code>66.249.69.161</code></td>
+                    <td>USA</td>
+                    <td>Google</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 10:35:01</td>
+                    <td><code>167.172.77.108</code></td>
+                    <td>USA</td>
+                    <td>DigitalOcean</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/license.txt</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 14:17:52</td>
+                    <td><code>62.60.130.230</code></td>
+                    <td>Deutschland</td>
+                    <td>Hetzner Online</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/wp-content/plugins/updraftplus/readme.txt</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 14:17:52</td>
+                    <td><code>62.60.130.230</code></td>
+                    <td>Deutschland</td>
+                    <td>Hetzner Online</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/wp-content/plugins/updraftplus/css/updraftplus.css</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 14:17:53</td>
+                    <td><code>62.60.130.230</code></td>
+                    <td>Deutschland</td>
+                    <td>Hetzner Online</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/wp-json/wp/v2/plugins</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 18:25:42</td>
+                    <td><code>137.184.112.174</code></td>
+                    <td>USA</td>
+                    <td>DigitalOcean</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 18:25:42</td>
+                    <td><code>137.184.112.174</code></td>
+                    <td>USA</td>
+                    <td>DigitalOcean</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/static/favicon.ico</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 18:25:42</td>
+                    <td><code>137.184.112.174</code></td>
+                    <td>USA</td>
+                    <td>DigitalOcean</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 18:25:47</td>
+                    <td><code>137.184.112.174</code></td>
+                    <td>USA</td>
+                    <td>DigitalOcean</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/static/favicon.ico</code></td>
+                    <td></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 21:09:43</td>
+                    <td><code>66.249.69.173</code></td>
+                    <td>USA</td>
+                    <td>Google</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/index.html</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr class="vpn">
+                    <td>2026-07-03 22:00:39</td>
+                    <td><code>199.244.88.220</code></td>
+                    <td>Schweden</td>
+                    <td>Mullvad VPN</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/</code></td>
+                    <td><span class="badge badge-vpn">VPN</span></td>
+                </tr>
+                <tr class="vpn">
+                    <td>2026-07-03 22:03:19</td>
+                    <td><code>199.244.88.221</code></td>
+                    <td>Schweden</td>
+                    <td>Mullvad VPN</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/static/favicon.ico</code></td>
+                    <td><span class="badge badge-vpn">VPN</span></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 23:03:07</td>
+                    <td><code>136.107.211.151</code></td>
+                    <td>USA</td>
+                    <td>Google Cloud</td>
+                    <td>200</td>
+                    <td>GET</td>
+                    <td><code>/</code></td>
+                    <td></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 23:12:45</td>
+                    <td><code>104.210.140.139</code></td>
+                    <td>USA</td>
+                    <td>Microsoft Azure</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/robots.txt</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 23:12:46</td>
+                    <td><code>104.210.140.137</code></td>
+                    <td>USA</td>
+                    <td>Microsoft Azure</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/robots.txt</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 23:39:43</td>
+                    <td><code>66.249.69.172</code></td>
+                    <td>USA</td>
+                    <td>Google</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/robots.txt</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr class="bot">
+                    <td>2026-07-03 23:39:44</td>
+                    <td><code>66.249.69.173</code></td>
+                    <td>USA</td>
+                    <td>Google</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/home</code></td>
+                    <td><span class="badge badge-bot">BOT</span></td>
+                </tr>
+                <tr>
+                    <td>2026-07-03 23:56:48</td>
+                    <td><code>47.128.118.99</code></td>
+                    <td>USA</td>
+                    <td>AWS</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/robots.txt</code></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2026-07-04 00:00:52</td>
+                    <td><code>47.128.118.60</code></td>
+                    <td>USA</td>
+                    <td>AWS</td>
+                    <td>404</td>
+                    <td>GET</td>
+                    <td><code>/robots.txt</code></td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <footer>
+            <p>Mobile-Netz-Erkennung basiert auf ASN-Lookups und ist nicht 100% zuverlässig</p>
+            <p>Generiert mit analyze_access_logs.py</p>
+        </footer>
+    </div>
+</body>
+</html>
