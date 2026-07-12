@@ -1,6 +1,6 @@
 # Solarwinds - Log Analysis Tool
 
-Professional tool for log analysis of Solarwinds
+Professional tool for log analysis of Solarwinds log archives
 
 ## Modules
 
@@ -17,9 +17,7 @@ Professional Python-based analysis of Heroku Router logs with geolocation, VPN d
 
 **Quick Start:**
 ```bash
-python3 analyze-access-logs.py -d /path/to/logs \
-  --csv results.csv \
-  --html report.html
+python analyze-access-logs.py -d logs\ --csv access-log-analysis.csv --html access-log-analysis.html
 ```
 
 **Requirements:**
@@ -44,8 +42,8 @@ python3 analyze-access-logs.py -d /path/to/logs \
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hjstephan86/solrwinds.git
-   cd solrwinds
+   git clone https://github.com/hjstephan86/solrwnds.git
+   cd solrwnds
    ```
 
 2. **Analyze logs:**
@@ -69,12 +67,12 @@ python3 analyze-access-logs.py -d /path/to/logs \
 
 ## Other Projects
 
-- **pyble**: FastAPI-based Bible Study App
-- **JuraX**: Jakarta EE Legal Case Management System
-- **Science**: 220+ academic papers on graph theory, cryptography, embedded systems, etc.
+- **Pyble**: FastAPI-based Bible Study App: https://github.com/hjstephan86/pyble
+- **Subgraph-SAT-Solver**: C++ 17-Implementierung des SAT-Solvers: https://github.com/hjstephan86/subgraph-sat-solver
+- **Science**: 220+ academic papers on graph theory, cryptography, embedded systems, etc.: https://github.com/hjstephan86/science
 
 ## Quick Links
 
-- Repository: https://github.com/hjstephan86/solrwinds
-- License: https://github.com/hjstephan86/solrwinds/blob/main/LICENSE
-- Issues: https://github.com/hjstephan86/solrwinds/issues
+- Repository: https://github.com/hjstephan86/solrwnds
+- License: https://github.com/hjstephan86/solrwnds/blob/main/LICENSE
+- Issues: https://github.com/hjstephan86/solrwnds/issues
